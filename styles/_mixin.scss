@@ -1,0 +1,10 @@
+@mixin universal__btn() {
+  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+  color: #343045;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.63px;
+  border: none;
+  padding: 17px 37px 16px 38px;
+  border-radius: 40px;
+}
