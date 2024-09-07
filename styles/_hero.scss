@@ -13,35 +13,27 @@
     flex-direction: column;
     gap: 30px;
 
-
-
-    .hero__title{
-        background: linear-gradient(91.57deg, #C0B7E8 -1.02%, #8176AF 36.25%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-        font-size: 46px;
-        font-weight: 700;
-        line-height: 56.07px;   
+    .hero__title {
+      background: linear-gradient(91.57deg, #c0b7e8 -1.02%, #8176af 36.25%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+      font-size: 46px;
+      font-weight: 700;
+      line-height: 56.07px;
     }
 
-
-    .hero__add__title{
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 48.76px;
-        background: #fff;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
+    .hero__add__title {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 48.76px;
+      background: #fff;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
     }
-
-
-
-
-
 
     .hero__btn {
       @include universal__btn;
@@ -53,4 +45,46 @@
       }
     }
   }
+
 }
+
+
+/*  Hero card section styles */
+
+.hero__card__section{
+    margin-top: 153px;
+}
+
+
+
+
+  .hero__cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 82px;
+  }
+
+  .hero__card {
+    height: 109px;
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    justify-content: center;
+    background: $card-bg-color;
+    box-shadow: 0px 4px 4px 0px #C0B7E803;
+    padding: 20px 40px;
+    border-radius: 90px;
+
+
+
+
+    &__title{
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29.26px;
+        color: $white-text;
+    }
+
+
+  }

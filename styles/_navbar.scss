@@ -1,14 +1,14 @@
 /* Navbar section styles */
 
 .navbar {
-    background-color: var(--hero--bg);
+    background-color: $main-bg;
     padding: 10px;
   
     &__wrapper {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      color: var(--white--text);
+      color: $white-text;
     }
   
     &__list {
@@ -19,7 +19,7 @@
   
       &-item a {
          text-decoration: none;
-         color: var(--white--text);
+         color: $white-text;
       }
   
     }
@@ -29,7 +29,7 @@
       border-radius: 40px;
       border: 2px solid #FFFFFF;
       background: transparent;
-      color: var(--white--text);
+      color: $white-text;
   
   
   
