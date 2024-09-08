@@ -8,6 +8,19 @@
     gap: 292px;
   }
 
+
+
+
+  .hero__img{
+    transition: 0.7s ease-in-out;
+
+        &:hover{
+            transform: scale(1.1);
+            transition: 1s ease-in-out;
+        }
+  }
+
+
   .hero__info {
     display: flex;
     flex-direction: column;
@@ -33,6 +46,10 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       color: transparent;
+    }
+
+    .hero__desc{
+      color: $white-text;
     }
 
     .hero__btn {

@@ -1,0 +1,117 @@
+/* Main section styles */
+
+/* Intro section styles */
+
+.intro__section{
+    margin-top: 115px;
+
+
+
+    .intro__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 97px;
+    }
+
+
+.intro__to-hydra{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 111px;
+
+
+
+    .intro__text{
+        display: flex;
+        flex-direction: column;
+    
+        &s{
+            display: flex;
+        }
+    }
+    
+    
+    .intro__title{
+        font-family: Montserrat;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 43.88px;
+        color: $white-text;
+    }
+    
+    .intro__add__title{
+        font-family: Montserrat;
+        font-size: 36px;
+        font-weight: 300;
+        line-height: 43.88px;
+        color: $white-text;
+    }
+
+    .intro__desc p {
+        color: $white-text;
+    } 
+    
+    
+    .intro__arrow{
+        margin-left: -15px;
+        margin-top: 20px;
+    }
+    
+}
+
+
+.intro__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 118px;
+
+
+
+    &__img{
+        transition: 0.7s ease-in-out;
+
+        &:hover{
+            transform: scale(1.1);
+            transition: 1s ease-in-out;
+        }
+    }
+
+
+
+    .intro__title{
+        font-family: Montserrat;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 43.88px;
+        color: $white-text;
+    }
+    
+    .intro__add__title{
+        font-family: Montserrat;
+        font-size: 36px;
+        font-weight: 300;
+        line-height: 43.88px;
+        color: $white-text;
+        margin-top: 5px;
+    }
+
+
+    &__desc{
+        color: $white-text;
+        margin-top: 42px;
+    }
+
+    &__btn{
+        @include universal__btn;
+        margin-top: 28px;
+    }
+
+
+}
+
+
+
+
+}
