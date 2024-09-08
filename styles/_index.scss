@@ -115,3 +115,124 @@
 
 
 }
+
+
+
+/* Features section styles */
+
+
+.features__section{
+
+    
+    margin-top: 113px;
+
+
+    .features__info{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 111px;
+    
+    
+    
+        .features__text{
+            display: flex;
+            flex-direction: column;
+        
+            &s{
+                display: flex;
+            }
+        }
+        
+        
+        .features__title{
+            font-family: Montserrat;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 43.88px;
+            color: $white-text;
+        }
+        
+        .features__add__title{
+            font-family: Montserrat;
+            font-size: 36px;
+            font-weight: 300;
+            line-height: 43.88px;
+            color: $white-text;
+        }
+    
+        .features__desc  {
+
+            p{
+                color: $white-text;
+            }
+        } 
+        
+        
+        .features__arrow{
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        
+    }
+
+
+    /* Features cards */
+
+
+    .features__card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 23px 35px 40px 25px;
+        background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
+        border-radius: 40px;
+
+
+
+        &s{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 11px;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        &__title{
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 29.26px;
+            color: $white-text;
+            margin-top: 21px;
+
+        }
+
+        &__hr{
+            width: 154px;
+            border: 1px solid #C0B7E854;
+            margin-top: 17.5px;
+        }
+
+        &__desc{
+            font-family: Montserrat;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14.63px;
+            margin-top: 21.5px;
+            color: $white-text;
+        }
+
+        &__btn{
+            margin-top: 35px;
+            @include universal__btn;
+        }
+
+    }
+
+
+
+
+}
