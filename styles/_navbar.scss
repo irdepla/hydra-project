@@ -1,45 +1,76 @@
 /* Navbar section styles */
 
 .navbar {
-    background-color: $main-bg;
-    padding: 10px;
-  
-    &__wrapper {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: $white-text;
-    }
-  
-    &__list {
-      display: flex;
-      gap: 42px;
-      list-style: none;
-  
-  
-      &-item a {
-         text-decoration: none;
-         color: $white-text;
-      }
-  
-    }
-  
-    &__btn {
-      padding: 17px 38px 16px 34px;
-      border-radius: 40px;
-      border: 2px solid #FFFFFF;
-      background: transparent;
-      color: $white-text;
-      cursor: pointer;
-  
-  
-  
-      &__container{
-          display: flex;
-          gap: 38px;
-      }
-    }
-     .join__btn{
-      @include universal__btn;
-     }
+  background-color: $main-bg;
+  padding: 10px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $white-text;
   }
+
+  &__list {
+    display: flex;
+    gap: 42px;
+    list-style: none;
+
+    &-item a {
+      text-decoration: none;
+      color: $white-text;
+      position: relative;
+      padding: 16px;
+      display: inline-block;
+      border: 2px solid #fff;
+      transition: 0.5s;
+
+      a:hover {
+        border: 2px solid #fff;
+      }
+
+      ::before {
+        content: " ";
+        position: absolute;
+        inset: 0 8px;
+        border-left: 2px solid #fff;
+        border-right: 2px solid #fff;
+        transition: 1s;
+      }
+
+      ::after {
+        content: " ";
+        position: absolute;
+        inset: 8px 0;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        transition: 1s;
+      }
+
+      :hover::before {
+        inset: 16px 8px;
+      }
+
+      :hover::after {
+        inset: 8px 16px;
+      }
+    }
+  }
+
+  &__btn {
+    padding: 17px 38px 16px 34px;
+    border-radius: 40px;
+    border: 2px solid #ffffff;
+    background: transparent;
+    color: $white-text;
+    cursor: pointer;
+
+    &__container {
+      display: flex;
+      gap: 38px;
+    }
+  }
+  .join__btn {
+    @include universal__btn;
+  }
+}
