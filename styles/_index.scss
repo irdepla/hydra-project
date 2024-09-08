@@ -234,5 +234,42 @@
 
 
 
+}
 
+/* Technology section styles */
+
+.technologies__section{
+    margin-top: 142px;
+
+
+    .technologies__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .technologies__img{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 40px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .technologies__title{
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 43.88px;
+        color: $white-text;
+    }
+    
+    .technologies__add__title{
+        display: block;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 300;
+        line-height: 43.88px;
+        color: $white-text;
+    }
 }
