@@ -273,3 +273,114 @@
         color: $white-text;
     }
 }
+
+
+/* Join section styles */ 
+
+.joining__section{
+    margin-top: 142px;
+    
+
+
+    .joining__wrapper{
+        background:  radial-gradient(50% 50% at 50% 50%, #403A5F 0%, #211E2E 100%);
+        border-radius: 60px;
+        box-shadow: 0px 4px 4px 0px #00000040;  
+        padding: 90px 150px 84px 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 65px;
+
+
+
+        .joining__intro{
+            &__title{
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 43.88px;
+                color: $white-text;
+                text-align: center;
+            }
+
+            &__add-title{
+                display: block;
+                margin-top: 21px;
+                font-size: 36px;
+                font-weight: 300;
+                line-height: 43.88px;
+                color: $white-text;
+            }
+
+            &__hr{
+                margin-top: 30px;
+                width: 100%;
+                height: 1px;
+                background: linear-gradient(270deg, #343045 0%, #C0B7E8 34.9%, #8176AF 68.75%, #343045 100%);
+            }
+
+
+        }
+
+
+        .joining__form{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+            row-gap: 40px;
+
+
+            textarea{
+                border: 2px solid #FFFFFF;
+                border-radius: 40px;
+                background: transparent;
+                padding: 27px 879px 166px 42px;
+                grid-column: span 2;
+                color: $white-text;
+                outline: none;
+                color: $white-text;
+            }
+
+
+
+
+
+
+            &__input{
+                border: 2px solid #FFFFFF;
+                border-radius: 40px;
+                padding: 27px 404px 28px 42px;
+                background: transparent;
+                outline: none;
+                color:  $white-text;
+            }
+
+
+
+
+            &__input:nth-child(5) {
+                grid-column: span 2;
+              }
+
+
+
+
+
+
+
+
+
+              &__btn{
+                @include universal__btn;
+              }
+
+
+
+
+
+        }
+
+    }
+
+}
